@@ -1,6 +1,6 @@
 ## makeCacheMatrix creates a matrix object that can cache a matrix and its inverse. 
 ## cachesolve solves the inverse of the matrix, only computing when necessary (when the matrix has changed)
-## otherwise it will retrieve the onverse from cache.
+## otherwise it will retrieve the inverse from cache.
 ## 
 ## ex:  > y <- makeCacheMatrix(matrix(1:4,2,2))
 ##      > cacheSolve(y) 
@@ -22,7 +22,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## cacheSolve computes the inverse of the makeCacheMatrix "matrix" 
+## cacheSolve computes the inverse of the makeCacheMatrix matrix 
 
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
